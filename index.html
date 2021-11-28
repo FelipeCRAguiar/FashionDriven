@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fashion Driven</title>
+  </head>
+  <body>
+    <header>
+        <img src="Assets/Logo.png">
+    </header>
+    <div class="content">
+        <div class="user-options">
+            <div class="shirt-selection">
+                <p>Escolha o modelo</p>
+                <div class="options shirt-style">
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/tshirt.png">
+                            <p class="hidden">t-shirt</p>
+                        </div>
+                        <p>T-shirt</p>
+                    </div>
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/Camiseta.png">
+                            <p class="hidden">top-tank</p>
+                        </div>
+                        <p>Camiseta</p>
+                    </div>
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/Mangalonga.png">
+                            <p class="hidden">long</p>
+                        </div>
+                        <p>Manga longa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shirt-selection">
+                <p>Escolha a gola</p>
+                <div class="options neck-style">
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/GolaV.png">
+                            <p class="hidden">v-neck</p>
+                        </div>
+                        <p>Gola V</p>
+                    </div>
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/GolaRedonda.png">
+                            <p class="hidden">round</p>
+                        </div>
+                        <p>Gola redonda</p>
+                    </div>
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/GolaPolo.png">
+                            <p class="hidden">polo</p>
+                        </div>
+                        <p>Gola polo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shirt-selection">
+                <p>Escolha o tecido</p>
+                <div class="options material">
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/Seda.png">
+                            <p class="hidden">silk</p>
+                        </div>
+                        <p>Seda</p>
+                    </div>
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/Algodão.png">
+                            <p class="hidden">cotton</p>
+                        </div>
+                        <p>Algodão</p>
+                    </div>
+                    <div class="option">
+                        <div class="icon" onclick="select(this)">
+                            <img src="Assets/Poliester.png">
+                            <p class="hidden">polyester</p>
+                        </div>
+                        <p>Poliéster</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-input">
+                <p>Imagem de referência</p>
+                <input placeholder="Insira o link">
+            </div>
+            <button>Confirmar pedido</button>
+        </div>
+        <div class="illustration">
+            <img src="Assets/ilustração.png">
+        </div>
+    </div>
+    <div class="last-orders">
+        <div>
+            <p>Ultimos pedidos</p>
+            <div class="orders">
+                <div class="order">
+                    <img src="Assets/Blusa1.png">
+                    <p><b>Criador:</b> Bruna</p>
+                </div>
+                <div class="order">
+                    <img src="Assets/Blusa1.png">
+                    <p><b>Criador:</b> Bruna</p>
+                </div>
+                <div class="order">
+                    <img src="Assets/Blusa1.png">
+                    <p><b>Criador:</b> Bruna</p>
+                </div>
+                <div class="order">
+                    <img src="Assets/Blusa1.png">
+                    <p><b>Criador:</b> Bruna</p>
+                </div>
+                <div class="order">
+                    <img src="Assets/Blusa1.png">
+                    <p><b>Criador:</b> Bruna</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
