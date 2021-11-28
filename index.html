@@ -18,7 +18,7 @@
         <div class="user-options">
             <div class="shirt-selection">
                 <p>Escolha o modelo</p>
-                <div class="options shirt-style">
+                <div class="options">
                     <div class="option">
                         <div class="icon" onclick="select(this)">
                             <img src="Assets/tshirt.png">
@@ -44,7 +44,7 @@
             </div>
             <div class="shirt-selection">
                 <p>Escolha a gola</p>
-                <div class="options neck-style">
+                <div class="options">
                     <div class="option">
                         <div class="icon" onclick="select(this)">
                             <img src="Assets/GolaV.png">
@@ -70,7 +70,7 @@
             </div>
             <div class="shirt-selection">
                 <p>Escolha o tecido</p>
-                <div class="options material">
+                <div class="options">
                     <div class="option">
                         <div class="icon" onclick="select(this)">
                             <img src="Assets/Seda.png">
@@ -96,7 +96,7 @@
             </div>
             <div class="user-input">
                 <p>Imagem de referência</p>
-                <input placeholder="Insira o link">
+                <input placeholder="Insira o link" oninput="checkOptions()">
             </div>
             <button>Confirmar pedido</button>
         </div>

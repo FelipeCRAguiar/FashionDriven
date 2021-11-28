@@ -109,7 +109,9 @@ header img {
     color: #232323;
 }
 .orders {
+    width: 100%;
     display: flex;
+    overflow-x: scroll;
 }
 .order {
     width: 201,69px;
@@ -135,6 +137,9 @@ b {
 }
 .order img {
     margin-bottom: 7.94px;
+}
+.selected {
+    border: 3px solid #404EED;
 }
 .hidden {
     display: none;
