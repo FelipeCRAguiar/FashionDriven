@@ -23,7 +23,7 @@ function checkOptions() {
 }
 function getShirts() {
     promise = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts")
-    promise.then(success)
+    promise.then(listShirts)
 }
 function listShirts(promise) {
     console.log(promise)
@@ -37,6 +37,8 @@ function listShirts(promise) {
             <p class="model hidden">${shirts[i].model}</p>
             <p class="neck hidden">${shirts[i].neck}</p>
             <p class="material hidden">${shirts[i].material}</p>
+            <p class="image hidden">${shirts[i].image}</p>
+            <p class="owner hidden">${shirts[i].owner}</p>
         </div>
         `
     }
@@ -64,5 +66,11 @@ function error(obj) {
 }
 function orderExistingShirt(shirt) {
     let choices = shirt.querySelectorAll(".hidden")
+    let newShirt = {model: choices[0].innerHTML, neck: choices[1].innerHTML, material: choices[2].innerHTML, image: choices[3].innerHTML, owner: name, author: choices[4].innerHTML}
+    if (confirm("Você quer encomendar essa camisa?")) {
+        let post = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", newShirt)
+        post.then(postShirt)
+        post.catch(error)
+    }
 }
 getShirts()
