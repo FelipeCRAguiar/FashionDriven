@@ -24,9 +24,9 @@ function checkOptions() {
 function getShirts() {
     promise = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts")
     promise.then(listShirts)
+    promise.catch(error)
 }
 function listShirts(promise) {
-    console.log(promise)
     let shirts = promise.data
     document.querySelector(".orders").innerHTML = ""
     for (let i = 0; i < shirts.length; i++) {
