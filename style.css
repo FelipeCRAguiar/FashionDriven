@@ -102,11 +102,13 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-family: Roboto;
     font-size: 24px;
     line-height: 28px;
     color: #232323;
+}
+.align {
+    margin-left: 120px;
 }
 .orders {
     width: 100%;
@@ -137,6 +139,8 @@ b {
 }
 .order img {
     margin-bottom: 7.94px;
+    width: 180px;
+    height: 180px;
 }
 .selected {
     border: 3px solid #404EED;
