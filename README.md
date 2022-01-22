@@ -10,8 +10,9 @@ You can use this app to make and order a shirt that fits your tastes, or order a
  - Select the shirt model
  - Select the shit collar type
  - Select the material you want your shirt made out of
- - Provide a image of 
- - Review your order
+ - Provide a reference image
+ - Order the created shirt
+ - Or order a shirt made by other users
 
 ## Technologies
 
