@@ -7,10 +7,10 @@ Try it out on ...
 
 You can use this app to make and order a shirt that fits your tastes, or order a shirt that someone else made that is to your liking:
 
- - Select the movie you want to see
- - Select the session you want to go to
- - Select the seats you want to reserve
- - Order the tickets
+ - Select the shirt model
+ - Select the shit collar type
+ - Select the material you want your shirt made out of
+ - Provide a image of 
  - Review your order
 
 ## Technologies
